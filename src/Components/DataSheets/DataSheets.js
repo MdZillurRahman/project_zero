@@ -36,7 +36,7 @@ const DemoTable = () => {
       ? localStorage.getItem("new_data")
       : localStorage.getItem("demo_data");
 
-    const filteredData = JSON.parse(storedData).filter( user => user.userName.toLowerCase().includes(name));
+    const filteredData = JSON.parse(storedData).filter( user => user.userName.toLowerCase().includes(name.toLowerCase()));
 
     setData(filteredData);
 
